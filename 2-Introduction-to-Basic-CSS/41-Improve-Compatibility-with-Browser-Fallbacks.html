@@ -1,0 +1,12 @@
+<!-- In this lesson I learned about certain compatability issues specifically with IE not liking CSS variable. I also learned how to setup fallback colors for background to support IE. --><style>
+  :root {
+    --red-color: red;
+  }
+  .red-box {
+    background: red;
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>
